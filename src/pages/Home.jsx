@@ -1,5 +1,20 @@
 import hero from "../assets/hero.jpg";
 import { motion } from "framer-motion";
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+
+  visible: {
+    opacity: 1,
+    y: 0,
+
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
 function Home() {
   return (
     <section
@@ -17,9 +32,9 @@ function Home() {
   <div className="max-w-xl">
 
     <motion.p
-  initial={{ opacity: 0, y: -30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
+  variants={fadeUp}
+  initial="hidden"
+  animate="visible"
   className="mb-4 text-xl font-medium text-yellow-400 md:text-2xl"
 >
   Welcome To

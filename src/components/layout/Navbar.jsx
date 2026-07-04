@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-
+import { useState } from "react";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
