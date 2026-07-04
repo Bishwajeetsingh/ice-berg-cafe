@@ -1,3 +1,4 @@
+import AboutSection from "../components/home/AboutSection";
 import hero from "../assets/hero.jpg";
 import { motion } from "framer-motion";
 import FeaturedCoffee from "../components/home/FeaturedCoffee";
@@ -109,6 +110,7 @@ function Home() {
 
     {/* Next Section */}
     <FeaturedCoffee />
+    <AboutSection />
   </>
 );
 }
