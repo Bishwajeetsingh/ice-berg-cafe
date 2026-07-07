@@ -5,7 +5,11 @@ function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">{children}</main>
+
+      <main>
+        {children}
+      </main>
+
       <Footer />
     </>
   );

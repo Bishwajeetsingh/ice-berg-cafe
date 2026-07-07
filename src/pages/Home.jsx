@@ -1,5 +1,6 @@
+import PopularMenu from "../components/home/PopularMenu";
 import AboutSection from "../components/home/AboutSection";
-import hero from "../assets/hero.jpg";
+import hero from "../assets/images/hero/hero.jpg";
 import { motion } from "framer-motion";
 import FeaturedCoffee from "../components/home/FeaturedCoffee";
 const fadeUp = {
@@ -111,6 +112,7 @@ function Home() {
     {/* Next Section */}
     <FeaturedCoffee />
     <AboutSection />
+    <PopularMenu />
   </>
 );
 }
