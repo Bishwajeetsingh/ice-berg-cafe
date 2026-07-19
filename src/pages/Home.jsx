@@ -1,3 +1,4 @@
+import Testimonials from "../components/home/Testimonials";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import PopularMenu from "../components/home/PopularMenu";
 import AboutSection from "../components/home/AboutSection";
@@ -115,6 +116,7 @@ function Home() {
     <AboutSection />
     <PopularMenu />
     <WhyChooseUs />
+    <Testimonials />
   
   </>
 );
