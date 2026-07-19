@@ -1,5 +1,5 @@
 import Gallery from "../components/home/Gallery";
-
+import ReservationCTA from "../components/home/ReservationCTA";
 import Testimonials from "../components/home/Testimonials";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import PopularMenu from "../components/home/PopularMenu";
@@ -120,6 +120,7 @@ function Home() {
     <WhyChooseUs />
     <Testimonials />
     <Gallery />
+    <ReservationCTA />
   
   </>
 );
