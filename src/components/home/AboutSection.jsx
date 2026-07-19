@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import aboutImage from "../../assets/images/about/about.jpg";
 
 function AboutSection() {
   return (
@@ -12,10 +13,10 @@ function AboutSection() {
           viewport={{ once: true }}
         >
           <img
-            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
-            alt="Cafe"
-            className="rounded-3xl shadow-2xl"
-          />
+  src={aboutImage}
+  alt="Ice Berg Cafe Interior"
+  className="rounded-3xl shadow-2xl"
+/>
         </motion.div>
 
         {/* Right */}

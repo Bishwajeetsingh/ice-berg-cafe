@@ -1,3 +1,4 @@
+import WhyChooseUs from "../components/home/WhyChooseUs";
 import PopularMenu from "../components/home/PopularMenu";
 import AboutSection from "../components/home/AboutSection";
 import hero from "../assets/images/hero/hero.jpg";
@@ -113,6 +114,8 @@ function Home() {
     <FeaturedCoffee />
     <AboutSection />
     <PopularMenu />
+    <WhyChooseUs />
+  
   </>
 );
 }
