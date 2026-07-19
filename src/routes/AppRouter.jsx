@@ -1,5 +1,6 @@
-import Layout from "../components/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Layout from "../components/Layout";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -11,50 +12,15 @@ function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Layout>
-              <Home />
-            </Layout>
-          }
-        />
 
-        <Route
-          path="/about"
-          element={
-            <Layout>
-              <About />
-            </Layout>
-          }
-        />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="reservation" element={<Reservation />} />
+        </Route>
 
-        <Route
-          path="/menu"
-          element={
-            <Layout>
-              <Menu />
-            </Layout>
-          }
-        />
-
-        <Route
-          path="/contact"
-          element={
-            <Layout>
-              <Contact />
-            </Layout>
-          }
-        />
-
-        <Route
-          path="/reservation"
-          element={
-            <Layout>
-              <Reservation />
-            </Layout>
-          }
-        />
       </Routes>
     </BrowserRouter>
   );
