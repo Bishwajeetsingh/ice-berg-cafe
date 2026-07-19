@@ -1,3 +1,5 @@
+import Gallery from "../components/home/Gallery";
+
 import Testimonials from "../components/home/Testimonials";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import PopularMenu from "../components/home/PopularMenu";
@@ -117,6 +119,7 @@ function Home() {
     <PopularMenu />
     <WhyChooseUs />
     <Testimonials />
+    <Gallery />
   
   </>
 );
