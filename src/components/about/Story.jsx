@@ -16,11 +16,17 @@ function Story() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <img
-              src={storyImg}
-              alt="Barista preparing coffee"
-              className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
-            />
+            <div className="group relative overflow-hidden rounded-3xl">
+
+  <div className="absolute inset-0 rounded-3xl bg-amber-500/20 blur-3xl opacity-0 transition-all duration-700 group-hover:opacity-100"></div>
+
+  <img
+    src={storyImg}
+    alt="Barista preparing coffee"
+    className="relative w-full h-[600px] object-cover rounded-3xl shadow-2xl transition-all duration-700 group-hover:scale-110"
+  />
+
+</div>
           </motion.div>
 
           {/* Content */}
