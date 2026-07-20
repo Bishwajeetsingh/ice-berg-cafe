@@ -1,5 +1,11 @@
+import AboutHero from "../components/about/AboutHero";
+
 function About() {
-  return <h1>☕ About Page</h1>;
+  return (
+    <>
+      <AboutHero />
+    </>
+  );
 }
 
 export default About;
